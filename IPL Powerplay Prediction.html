@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5000/#predictions -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>IPL Powerplay Prediction</title>
+    <link href="./IPL Powerplay Prediction_files/css" rel="stylesheet">
+    <link href="./IPL Powerplay Prediction_files/icon" rel="stylesheet">
+    <link rel="stylesheet" href="./IPL Powerplay Prediction_files/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./IPL Powerplay Prediction_files/mystyle.css">
+    <link rel="icon" type="image/x-icon" href="http://127.0.0.1:5000/static/favicon.jpg">
+</head>
+
+
+<body>
+    <div class="center-container">
+        <h1>
+            <span class="iconify" data-icon="mdi:cricket"></span>
+            IPL 2021 Powerplay prediction
+        </h1>
+        <h5>Author: Nohan Joemon</h5>
+        <h5>Topics: Basic Machine Learning - Linear Regression, Decision Trees, XGBoost, etc</h5>
+            <h2>
+                About the project:
+            </h2>
+            <div style="display:flex">
+                <img class="mainimage" src="./IPL Powerplay Prediction_files/mainimg.png">
+                <div>
+                    <p class="about">
+                        &nbsp;&nbsp; IPL is one of the most popular cricket leagues in the world.  In this project, I have developed and deployed a Machine
+                        Learning model for predicting the powerplay scores of a particular innings of a particular match, using past history of ipl matches.
+                        Given some information about the match (like venue, batting and bowling teams, no. of players who batted in powerplay, no. of players who bowled in powerplay,etc)
+                        , the model can predict the number of runs scored by the batting team during the powerplay. 
+                        <br><br>
+                        &nbsp;&nbsp; The dataset available contains ball-by-ball information, hence I have performed the required preprocessing to extract the exact variables that can be used by our model.
+                        I have tried different ML algorithms from linear regression to xgboost in this project. Github link to the codes used in the project (both for development and deployment) is provided below.
+                        <br>
+                    </p>
+                    <div style="text-align: center;margin-top:15px;">
+                        
+                        <a class="github" style="  text-decoration-line: None;" target="_blank" href="https://github.com/NohanJoemon/IPL-powerplay-predictions-using-ML"><i style="font-size:20px;" class="fa fa-github"></i>  Github link </a>
+                    </div>
+                </div>
+               
+            </div>
+
+        
+    
+            <h2>
+                Test using your inputs :
+            </h2>
+                <form action="http://127.0.0.1:5000/#predictions" method="POST">
+
+                    <!-- Venue -->
+                    <label for="venue">Venue:</label>
+                    <select name="venue" method="GET" action="/">
+                        
+                            <option value="Wankhede Stadium">Wankhede Stadium</option>"
+                        
+                    </select>
+                    <br>
+
+                    <!-- Innings-->
+                    <label for="innings">Innings:</label>
+                    <select name="innings" method="GET" action="/">
+                        
+                            <option value="2">2</option>"
+                        
+                    </select>
+                    <br>
+
+                    <!-- Batting team -->
+                    <label for="batteam">Batting Team:</label>
+                    <select name="batteam" method="GET" action="/">
+                        
+                            <option value="Chennai Super Kings">Chennai Super Kings</option>"
+                        
+                    </select>
+                    <br>
+
+                    <!-- Bowling team -->
+                    <label for="bowlteam">Bowling Team:</label>
+                    <select name="bowlteam" method="GET" action="/">
+                        
+                            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>"
+                        
+                    </select>
+                    <br>
+
+                    <!-- Num batsmen -->
+                    <label for="nbat">No. of players who batted in the powerplay:</label>
+                    <select name="nbat" method="GET" action="/">
+                        
+                            <option value="4">4</option>"
+                        
+                    </select>
+                    <br>
+
+                    <!-- Num bowlers -->
+                    <label for="nbowl">No. of players who bowled in the powerplay:</label>
+                    <select name="nbowl" method="GET" action="/">
+                        
+                            <option value="4">4</option>"
+                        
+                    </select>
+                    <br>
+
+                
+                 <center>  <a href="http://127.0.0.1:5000/"><input class="submit-btn" type="link" value="Try another input "></a></center>
+                 
+                </form>
+            
+            <div id="#predictions">
+                <h2>
+                    Predictions:
+                </h2>
+                <h3>
+                <table>
+                    <tbody><tr>
+                        <th>Model</th>
+                        <th>Prediction (runs)</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Linear Regression</td>
+                        <td>48</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Decision Tree Regression</td>
+                        <td>31</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Random Forest Regression</td>
+                        <td>41</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>KNN Regression</td>
+                        <td>38</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Support Vector Regression</td>
+                        <td>46</td>
+                    </tr>
+                    
+                </tbody></table>
+                </h3>
+            </div>
+            
+    </div>
+    
+
+
+
+
+
+</body></html>

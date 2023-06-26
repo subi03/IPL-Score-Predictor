@@ -1,0 +1,85 @@
+/* Main image */
+.mainimage {
+  width: 47%;
+  margin:3px;
+}
+.about {
+  margin-left:15px;
+}
+.center-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+body {
+  background-color: rgb(213 187 191);
+  font-family: "Helvetica";
+}
+  
+h1,h2,h3{
+  color:  rgb(43 29 116);
+  font-family: "Montserrat",sans-serif;
+}
+h1{
+  border:5px solid;
+  text-align: center;
+  font-size: 60px;
+  border-color:rgb(43 29 116);
+  padding:5px;
+}
+h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: left;
+  border-bottom: 1px solid;
+}
+h3 {
+
+  font-size: 20px;
+}
+h5{
+  color:black;
+  font-size:17px;
+}
+label{
+  padding:10px;
+  display:inline-block;
+  width:400px;
+}
+
+select,option {
+  padding:10px;
+  width:300px;
+}
+
+.github,.submit-btn {
+  color:black;
+  border:black 1px solid;
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+}
+.submit-btn {
+  font-size: 20px;
+  text-align: center;
+}
+.github:hover,.submit-btn:hover {
+  color:white;
+  background-color: black;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding:4px;
+  text-align: left;
+}
+h3{
+  text-align:center;
+}
+td{
+  color:black;
+  font-size: 15px;
+  font-weight: 100;
+}
